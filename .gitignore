@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/智能指针生命周期
+/.vs/Client/v17
+/x64/Debug
+/Client/x64/Debug

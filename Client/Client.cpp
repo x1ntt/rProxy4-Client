@@ -17,7 +17,7 @@ int main(){
 	WSADATA wsaData;
 	WSAStartup(MAKEWORD(2, 2), &wsaData);
 
-	shared_ptr<NodeClient> nc = shared_ptr<NodeClient>(new NodeClient("101.42.104.214", 7201));
+	shared_ptr<NodeClient> nc = shared_ptr<NodeClient>(new NodeClient("127.0.0.1", 7201));
 	if (nc->IsError()) {
 		nc->reconnect();
 		return -1;
